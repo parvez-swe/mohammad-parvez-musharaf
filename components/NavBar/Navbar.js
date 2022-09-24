@@ -16,8 +16,12 @@ const Navbar = () => {
             />
           </div>
           <div className="mt-16 md:mt-0 md:ml-2">
-            <h3 className="font-bold md:text-2xl text-white">Mohammad Parvez Musharaf</h3>
-            <p className="font-light md:text-semibold text-white">mdparvezmusharaf2@gmail.com</p>
+            <h3 className="font-bold md:text-2xl text-white">
+              Mohammad Parvez Musharaf
+            </h3>
+            <p className="font-light md:text-semibold text-white">
+              mdparvezmusharaf2@gmail.com
+            </p>
           </div>
         </div>
 
@@ -25,7 +29,10 @@ const Navbar = () => {
           {links.map((link) => {
             // const { id, url, text } = link;
             return (
-              <li className="font-semibold pl-5 py-5 px-1 text-red-100 hover:text-white hover:cursor-pointer duration-700 ease-in-out">
+              <li
+                key={link.id}
+                className="font-semibold pl-5 py-5 px-1 text-red-100 hover:text-white hover:cursor-pointer duration-700 ease-in-out"
+              >
                 <a>{link.text}</a>
               </li>
             );
