@@ -3,10 +3,24 @@ import { links } from "./data";
 import Image from "next/image";
 import myLOader from "./images/profile.jpg";
 const Navbar = () => {
+    const [toggle, setToggle] = useState(false);
+    const toggleHandler = ()=>{
+      setToggle(!toggle);
+      console.log(toggle);
+    }
   return (
     <>
-      <div className="flex flex-col md:flex-row bg-red-400 w-[80%] md:w-[100%] h-[100vh] md:h-16 md:justify-between ">
-        <div className="pl-5 flex flex-col md:flex-row h-[32%] md:h-12 bg-slate-300 md:bg-red-400">
+      {!toggle?( <button className="absolute z-20 md:hidden" onClick={toggleHandler}>
+        X
+      </button>): ''
+       }
+      
+      
+      
+      {
+        !toggle? (
+                <div className="flex flex-col md:flex-row bg-red-400 w-[80%] md:w-[100%] h-[100vh] md:h-16 md:justify-between ">
+        <div className="relative pl-5 flex flex-col md:flex-row h-[32%] md:h-12 bg-slate-300 md:bg-red-400">
           <div className="pt-5 md:pt-0  h-10 w-12">
             {" "}
             <Image
@@ -39,6 +53,12 @@ const Navbar = () => {
           })}
         </ul>
       </div>
+        ):(
+          <h1 onClick={toggleHandler}> click </h1>
+        )
+      }
+      
+
     </>
   );
 };
