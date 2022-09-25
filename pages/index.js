@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Navbar from '../components/NavBar/Navbar';
 import styles from '../styles/Home.module.css'
 import { useState } from 'react';
+import  Mains from '../components/NavBar/Mains';
 
 export default function Home() {
   
@@ -14,6 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <Mains />
     </div>
   );
 }
