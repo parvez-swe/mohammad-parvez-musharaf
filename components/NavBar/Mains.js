@@ -13,9 +13,8 @@ const Mains = () => {
               Md Parvez Musharaf
             </h1>
             <p className="font-bold text-base md:text-lg text-gray-600">
-              I'm a Professional web developer. I love to working with
+              Im a Professional web developer. I love to working with
               <span className="text-gray-800">
-                {" "}
                 HTML, CSS, Tailwindcss, Jascript, Reactjs, Nextjs.
               </span>
             </p>
