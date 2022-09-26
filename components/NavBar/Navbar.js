@@ -19,12 +19,16 @@ const Navbar = () => {
 
       {toggle ? (
         <div
-          className={`absolute flex flex-col md:flex-row bg-red-400 w-[80%] md:w-[100%] h-[100vh] md:h-16 md:justify-between md:hidden`}
+          className={`z-50 absolute flex flex-col md:flex-row bg-red-400 w-[80%] md:w-[100%] h-[110vh] md:h-16 md:justify-between md:hidden`}
         >
           <div className="relative pl-5 flex flex-col md:flex-row h-[32%] md:h-12 bg-slate-300 md:bg-red-400">
-            
-             <butto className="md:hidden absolute cursor-pointer" onClick={toggleHandler}>X</butto> 
-            
+            <butto
+              className="md:hidden absolute cursor-pointer"
+              onClick={toggleHandler}
+            >
+              X
+            </butto>
+
             <div className="pt-5 md:pt-0  h-10 w-12">
               {" "}
               <Image
@@ -66,7 +70,7 @@ const Navbar = () => {
       {/****************************desktop view*/}
 
       <div
-        className={`hidden md:fixed md:flex md:flex-row  w-[80%] md:w-[100%] md:h-16 md:justify-between`}
+        className={`z-50 hidden md:fixed md:flex md:flex-row  w-[80%] md:w-[100%] md:h-[10vh] md:justify-between`}
       >
         <div className="md:flex md:flex-row h-[32%] md:h-12 ">
           <div className="pt-5 md:pt-0 ml-5  h-10 w-12">
@@ -91,7 +95,7 @@ const Navbar = () => {
             return (
               <li
                 key={link.id}
-                className="font-semibold pl-5 py-5 px-1 text-red-100 hover:text-white hover:cursor-pointer duration-700 ease-in-out"
+                className="font-semibold pl-5 py-5 px-1 text-white hover:text-rose-400 hover:cursor-pointer duration-700 "
               >
                 <a>{link.text}</a>
               </li>

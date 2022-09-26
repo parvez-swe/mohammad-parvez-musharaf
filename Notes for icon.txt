@@ -1,0 +1,10 @@
+go to icomoon.io
+go to icomoon app
+go to down ->add icon from the library
+add icon from library
+entypo+ 
+select them
+generate svg and more down
+setting down
+uncheck png
+download
