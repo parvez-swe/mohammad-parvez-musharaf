@@ -66,9 +66,9 @@ const Navbar = () => {
       {/****************************desktop view*/}
 
       <div
-        className={`hidden md:flex md:flex-row bg-red-400 w-[80%] md:w-[100%] md:h-16 md:justify-between`}
+        className={`hidden md:fixed md:flex md:flex-row  w-[80%] md:w-[100%] md:h-16 md:justify-between`}
       >
-        <div className="md:flex md:flex-row h-[32%] md:h-12 md:bg-red-400">
+        <div className="md:flex md:flex-row h-[32%] md:h-12 ">
           <div className="pt-5 md:pt-0 ml-5  h-10 w-12">
             {" "}
             <Image

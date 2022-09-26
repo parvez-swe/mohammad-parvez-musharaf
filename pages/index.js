@@ -1,12 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Navbar from '../components/NavBar/Navbar';
-import styles from '../styles/Home.module.css'
-import { useState } from 'react';
-import  Mains from '../components/NavBar/Mains';
+import Head from "next/head";
+import Image from "next/image";
+import Navbar from "../components/NavBar/Navbar";
+import Mains from "../components/NavBar/Mains";
 
 export default function Home() {
-  
   return (
     <div>
       <Head>
@@ -16,6 +13,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Mains />
+     
     </div>
   );
 }
